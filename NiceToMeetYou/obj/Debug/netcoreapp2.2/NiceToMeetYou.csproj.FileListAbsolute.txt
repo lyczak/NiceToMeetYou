@@ -1,0 +1,11 @@
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/bin/Debug/netcoreapp2.2/NiceToMeetYou.deps.json
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/bin/Debug/netcoreapp2.2/NiceToMeetYou.runtimeconfig.json
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/bin/Debug/netcoreapp2.2/NiceToMeetYou.runtimeconfig.dev.json
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/bin/Debug/netcoreapp2.2/NiceToMeetYou.dll
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/bin/Debug/netcoreapp2.2/NiceToMeetYou.pdb
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/obj/Debug/netcoreapp2.2/NiceToMeetYou.csprojAssemblyReference.cache
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/obj/Debug/netcoreapp2.2/NiceToMeetYou.csproj.CoreCompileInputs.cache
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/obj/Debug/netcoreapp2.2/NiceToMeetYou.AssemblyInfoInputs.cache
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/obj/Debug/netcoreapp2.2/NiceToMeetYou.AssemblyInfo.cs
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/obj/Debug/netcoreapp2.2/NiceToMeetYou.dll
+/Users/glyczak/RiderProjects/NiceToMeetYou/NiceToMeetYou/obj/Debug/netcoreapp2.2/NiceToMeetYou.pdb

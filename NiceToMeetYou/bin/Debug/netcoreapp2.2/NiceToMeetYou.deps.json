@@ -1,0 +1,821 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "5d448151470de716e650f85430a536ee34adf343"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "NiceToMeetYou/1.0.0": {
+        "dependencies": {
+          "Discord.Net": "2.1.1",
+          "Discord.Net.Commands": "2.1.1",
+          "Microsoft.Extensions.Configuration": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Configuration.Json": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Logging": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Logging.Console": "3.0.0-preview6.19304.6",
+          "Microsoft.ML": "1.1.0"
+        },
+        "runtime": {
+          "NiceToMeetYou.dll": {}
+        }
+      },
+      "Discord.Net/2.1.1": {
+        "dependencies": {
+          "Discord.Net.Commands": "2.1.1",
+          "Discord.Net.Core": "2.1.1",
+          "Discord.Net.Rest": "2.1.1",
+          "Discord.Net.WebSocket": "2.1.1",
+          "Discord.Net.Webhook": "2.1.1"
+        }
+      },
+      "Discord.Net.Commands/2.1.1": {
+        "dependencies": {
+          "Discord.Net.Core": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Discord.Net.Commands.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Discord.Net.Core/2.1.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "System.Collections.Immutable": "1.5.0",
+          "System.Interactive.Async": "3.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Discord.Net.Core.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Discord.Net.Rest/2.1.1": {
+        "dependencies": {
+          "Discord.Net.Core": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Discord.Net.Rest.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Discord.Net.Webhook/2.1.1": {
+        "dependencies": {
+          "Discord.Net.Core": "2.1.1",
+          "Discord.Net.Rest": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Discord.Net.Webhook.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Discord.Net.WebSocket/2.1.1": {
+        "dependencies": {
+          "Discord.Net.Core": "2.1.1",
+          "Discord.Net.Rest": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Discord.Net.WebSocket.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.FileProviders.Physical": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Configuration.FileExtensions": "3.0.0-preview6.19304.6",
+          "System.Text.Json": "4.6.0-preview6.19303.8",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview6.19304.6": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.FileSystemGlobbing": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/3.0.0-preview6.19304.6": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.DependencyInjection": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Logging.Abstractions": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Options": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/3.0.0-preview6.19304.6": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Configuration/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Configuration.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Console/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Logging": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Logging.Configuration": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Console.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Primitives": "3.0.0-preview6.19304.6",
+          "System.ComponentModel.Annotations": "4.6.0-preview6.19303.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Configuration.Binder": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Options": "3.0.0-preview6.19304.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview6.19303.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.ML/1.1.0": {
+        "dependencies": {
+          "Microsoft.ML.CpuMath": "1.1.0",
+          "Microsoft.ML.DataView": "1.1.0",
+          "Newtonsoft.Json": "11.0.2",
+          "System.CodeDom": "4.4.0",
+          "System.Collections.Immutable": "1.5.0",
+          "System.Memory": "4.5.2",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Threading.Tasks.Dataflow": "4.8.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.1.27804.5"
+          },
+          "lib/netstandard2.0/Microsoft.ML.Data.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.1.27804.5"
+          },
+          "lib/netstandard2.0/Microsoft.ML.KMeansClustering.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.1.27804.5"
+          },
+          "lib/netstandard2.0/Microsoft.ML.PCA.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.1.27804.5"
+          },
+          "lib/netstandard2.0/Microsoft.ML.StandardTrainers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.1.27804.5"
+          },
+          "lib/netstandard2.0/Microsoft.ML.Transforms.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.1.27804.5"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libFactorizationMachineNative.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libLdaNative.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libFactorizationMachineNative.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libLdaNative.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/FactorizationMachineNative.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/LdaNative.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/FactorizationMachineNative.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/LdaNative.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Microsoft.ML.CpuMath/1.1.0": {
+        "dependencies": {
+          "System.Memory": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.CpuMath.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.1.27804.5"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libCpuMathNative.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libCpuMathNative.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/CpuMathNative.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/CpuMathNative.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Microsoft.ML.DataView/1.1.0": {
+        "dependencies": {
+          "System.Memory": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.DataView.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.1.27804.5"
+          }
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
+      "System.CodeDom/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "System.Collections.Immutable/1.5.0": {},
+      "System.ComponentModel.Annotations/4.6.0-preview6.19303.8": {},
+      "System.Interactive.Async/3.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Interactive.Async.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.702"
+          }
+        }
+      },
+      "System.IO/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Memory/4.5.2": {},
+      "System.Reflection/4.3.0": {
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Reflection.Emit.ILGeneration/4.3.0": {
+        "dependencies": {
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "dependencies": {
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Reflection.Primitives/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Runtime/4.3.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview6.19303.8": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "System.Text.Encoding/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Text.Json/4.6.0-preview6.19303.8": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview6.19303.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.700.19.30308"
+          }
+        }
+      },
+      "System.Threading.Tasks/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Threading.Tasks.Dataflow/4.8.0": {},
+      "System.Threading.Tasks.Extensions/4.5.2": {}
+    }
+  },
+  "libraries": {
+    "NiceToMeetYou/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Discord.Net/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ebkB+ax3yfH3Qv2cNv86reoVc4pbNmgbE4kIm8oWJ7ch3aiI29ZDIMxMyEXvMs90f6x79kMb2i8bLme1hDh/Dg==",
+      "path": "discord.net/2.1.1",
+      "hashPath": "discord.net.2.1.1.nupkg.sha512"
+    },
+    "Discord.Net.Commands/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M2xS9QNfT0VcgTTarvZCj2nKwdv/8c1Mok0aTZ0qlPXCis4+pqJGhEAXv6we5kKhvxtiZxl1/ThMVDBsNPkFiA==",
+      "path": "discord.net.commands/2.1.1",
+      "hashPath": "discord.net.commands.2.1.1.nupkg.sha512"
+    },
+    "Discord.Net.Core/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G1E9gzmSBP4PoWCEhy+j8OXGouakKS7vzYO2DhtzP918xzwYYLuoWdRH8/1m9pIENM/bbpe+wyTx2vmTAROIdQ==",
+      "path": "discord.net.core/2.1.1",
+      "hashPath": "discord.net.core.2.1.1.nupkg.sha512"
+    },
+    "Discord.Net.Rest/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cDbWKFmNmsNTguJl9IBAfsHs12dJNp5zEm7qXRkV6q6tL/tGJFbf9r6/0svrbzbcyU7SvaybWW06U5p5r4ClOQ==",
+      "path": "discord.net.rest/2.1.1",
+      "hashPath": "discord.net.rest.2.1.1.nupkg.sha512"
+    },
+    "Discord.Net.Webhook/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HFh3md0qEXp+M873tHz2owZjzVY4UqTUJlbZxvrW8CZoPZtVbjG1whuzIWTN3SRnGa5quJLe6RdaTdKB12U/sg==",
+      "path": "discord.net.webhook/2.1.1",
+      "hashPath": "discord.net.webhook.2.1.1.nupkg.sha512"
+    },
+    "Discord.Net.WebSocket/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wr8av4+LUXJ4bLBShWv0GD3SQD8RiiIuwvG1ThqNLXgRdBfvWlqSJg4LJaVEbnXGnc8MfzY3sfh7ut/MjW1UKQ==",
+      "path": "discord.net.websocket/2.1.1",
+      "hashPath": "discord.net.websocket.2.1.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ya3VvWSRRcbfr0WB3N3dmeZvm3vBqHxsvRIFQnEgn2oocolDP+lRJs2QkY2hrFrLOtOauYOi84wrODDko7wx7Q==",
+      "path": "microsoft.extensions.configuration/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.configuration.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k/u1naeposXo+FFZ926JYtfpSnZRyf/eWrGKqNq2SVISBVFDVVeJQfTVX+KCQkID4osO5VBhpPZcN8ShXcoQZg==",
+      "path": "microsoft.extensions.configuration.abstractions/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.configuration.abstractions.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9YDqOo/m8TwyzyqLmLPniaRuyOTxcN2w9nadBxu/tJNUOaIgWRuAbzGGzIZsEL8SsgX+7tL/aNB4cUYkeoNV6w==",
+      "path": "microsoft.extensions.configuration.binder/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.configuration.binder.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o//Drdm7/9jK67SKvA3KOwYQrFttttT9wbD4tsg7yA5gJ2kEd3RnvT5RDIyUgzG7lY6jIG8nWCvutu3/Ta09HA==",
+      "path": "microsoft.extensions.configuration.fileextensions/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.configuration.fileextensions.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Json/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mGP1aIr8RYT0lPPC037caaAypdRETzAPsFSTXlPe1RXOPKp2/4vKsrl4O9Y6gB8Z3If6xjXyNbaBypIvZ8jPJA==",
+      "path": "microsoft.extensions.configuration.json/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.configuration.json.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NaWASEPtvCaZjXQCcGj+G/iHp8yWwQdF0A9dPdiETPSyB2V9iAKPme6UbifMF/LwM6xLp/DGv6qgZJT5jTUxDw==",
+      "path": "microsoft.extensions.dependencyinjection/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.dependencyinjection.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-axs6h0X3VzM6Bm1jUF3696GRXHuKvKyWGUKu8w0oyxtFByVCn5+ccBtN0+unrxP5Dw4fXAhVllFRqXRHBZKEiA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ENOkswcEm6YwHLpc7+bktYZkqZOenN31GKmvSFqRP/GhfveeGgcWKuo6aTWIV//NwuV5sE60KIl8R3QapUMrRw==",
+      "path": "microsoft.extensions.fileproviders.abstractions/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Physical/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9Y6/qiY6eXZoNGILh3f37i0vfyvW1BAl6aHvN6k5glXEvfIEJMc7/duD5J1oFPgTiZC+VBh92+1VI5xYEb913w==",
+      "path": "microsoft.extensions.fileproviders.physical/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.fileproviders.physical.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MfKhgJ6OoZa4e3vpsuSPERcp8VAWZjwupsysadrGbfwcc4BQpcNwwZQgBQ97xUiPusRi5HehPdOdCQqiH88kMQ==",
+      "path": "microsoft.extensions.filesystemglobbing/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.filesystemglobbing.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xr4FqRCycsF3DcEmN6do8xY6ydCKiM9NgoVdAatTrXQO4BE/RJTPhNZ4xrKL1ZDmEpyz3h1meGgG3Ujc9MHKsQ==",
+      "path": "microsoft.extensions.logging/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.logging.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5qSw18cbTcJaJzXet7mdjk5VjvQgHtGLR1Gjz3E97cXBQSM1e+to5c6/Z0KkmOiitMMrzk4pt8BvQg7882K0Ng==",
+      "path": "microsoft.extensions.logging.abstractions/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.logging.abstractions.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Configuration/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pEOzc9iYGbziSRzlyugRiZTHZwmZvbmy6d6GUhfwjpaHJ/vJmY9W59J9SuiT3TkVcsxMnYVIoxzOhbR0HpF9yQ==",
+      "path": "microsoft.extensions.logging.configuration/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.logging.configuration.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Console/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zxqr6zT48FyBRp8IjjaGbR/1/QBmUkYh/XEDTlivJZdTd1RqnW5iJuAdYlgakAengwZEs3sHKPo0gXR2J2uisw==",
+      "path": "microsoft.extensions.logging.console/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.logging.console.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LKcDtLGbnHDPoCFdWezY3zfFMrEWSoz00gvDvQVCjNXH/f/CjINTf7yV3axwt8/sPzdfBYdjE0rqWNYbGsDS4w==",
+      "path": "microsoft.extensions.options/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.options.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pa5OmNkkvlDxFsS409/ItZzvRLEluKwtFclrPX6VNJDA4MS9zmEn1VV6N35gwhJ8yoHSoajM7od1/Qf7HAnwUg==",
+      "path": "microsoft.extensions.options.configurationextensions/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.options.configurationextensions.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yNy9V1ZoFHnlMHzonpDY5YYNoJnaNRy2fM+rPw7r/pXE1jqzWRhgo3/haDiHVeL4IGRTq4BKjdCWDTHF+Lw5EQ==",
+      "path": "microsoft.extensions.primitives/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.primitives.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.ML/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gH9JO4XUWqh4RlXcwMORIrJtdFFcSIA6ep7/5RMp2QnixfEr9ajHHEbwR495hzPZSNd4VY+BfaM6s9WE9iU29w==",
+      "path": "microsoft.ml/1.1.0",
+      "hashPath": "microsoft.ml.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.ML.CpuMath/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lt8ExfvkPOcDiOXtZRMvxUa4lrj8JUcJu/P+gIu1zjTv5gdzv2dVa9kj7BckdtFLqQ50LDlTkIkMkAwM3EcYCw==",
+      "path": "microsoft.ml.cpumath/1.1.0",
+      "hashPath": "microsoft.ml.cpumath.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.ML.DataView/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-taaiiY9N2MAGu9Et4VJXzqeIDahP9ONbD8t3JKxUAbbSny76vRDAKwklqJxo3AnUDnYWXE1sgRTaQypa8TWeAQ==",
+      "path": "microsoft.ml.dataview/1.1.0",
+      "hashPath": "microsoft.ml.dataview.1.1.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "System.CodeDom/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E/lvSfMFPtNflAgdM6AuPU8JbZdqdSoGpU66G7SrduCqdrFyPflaqqV4gN2d0hrCBpu92HaoqpUP5d+g9Itcxw==",
+      "path": "system.codedom/4.4.0",
+      "hashPath": "system.codedom.4.4.0.nupkg.sha512"
+    },
+    "System.Collections.Immutable/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T5XGQlcHhEO75Qx38GGCUDPdk4n/7yrRmTgy4yczzJV8alPHaxPU55TBC2UFrkQ42bu34sZPfK0dU+nWZUOEJA==",
+      "path": "system.collections.immutable/1.5.0",
+      "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.6.0-preview6.19303.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MMB8EuW1KWtW3lCeFa1qJBZ2YveJwoylQXjv18G7GO2QqkE7JuXSJUw6QlDW33Ttmeys7lGpsU0AB2BQKPbD+g==",
+      "path": "system.componentmodel.annotations/4.6.0-preview6.19303.8",
+      "hashPath": "system.componentmodel.annotations.4.6.0-preview6.19303.8.nupkg.sha512"
+    },
+    "System.Interactive.Async/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T3nigy9yShklMyVu7I2TvlVMRy2vUn9oQeBaRy0KZcOptyy+rUbekYaXxoa3s0h2tWT3UVtzrGkQC89CBbCtlg==",
+      "path": "system.interactive.async/3.2.0",
+      "hashPath": "system.interactive.async.3.2.0.nupkg.sha512"
+    },
+    "System.IO/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v8paIePhmGuXZbE9xvvNb4uJ5ME4OFXR1+8la/G/L1GIl2nbU2WFnddgb79kVK3U2us7q1aZT/uY/R0D/ovB5g==",
+      "path": "system.io/4.3.0",
+      "hashPath": "system.io.4.3.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ohf9h6em5CjPaAzupGtW/TWMzX6aVfIGPh7bq5KQmfvYJr+DqvOa0cRS9ggFKGIuvKTModCQEacGC/CwE8j7cg==",
+      "path": "system.memory/4.5.2",
+      "hashPath": "system.memory.4.5.2.nupkg.sha512"
+    },
+    "System.Reflection/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IyW2ftYNzgMCgHBk8lQiy+G3+ydbU5tE+6PEqM5JJvIdeFKaXDSzHAPYDREPe6zpr5WJ1Fcma+rAFCIAV6+DMw==",
+      "path": "system.reflection/4.3.0",
+      "hashPath": "system.reflection.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit.ILGeneration/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6b5fYr9ksZR6SYVzNzBqXQmAaGtY1mWYnpQAarBKp+C79NhUPRtX1bs4B5BS8nXzObcwVKc1fk+jVyCKCshdaQ==",
+      "path": "system.reflection.emit.ilgeneration/4.3.0",
+      "hashPath": "system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit.Lightweight/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rVivBylr0ISQegifkgJvo4mLdk651qB8lBS1UKg6xgRW8yo0Enwpu5OpYz+we6n9go97QaMdzl/wGafPGrKUNQ==",
+      "path": "system.reflection.emit.lightweight/4.3.0",
+      "hashPath": "system.reflection.emit.lightweight.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1LnMkF9aXKuQAgYzjoiQaL9mwY7oY6KdaO/zzeLMynNBEqKoUfLi5TiKIewoAF+hkxfGTZsjkjsF1jRL4uSeqg==",
+      "path": "system.reflection.primitives/4.3.0",
+      "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kqsiSfCAc8+v3Ez719s21lGthxuNi6lhAGmCGH3jdL9KMK+T8V9zsFrzQ/enDL1ISwTWRlcFh2Nq5yFx6wcU+w==",
+      "path": "system.runtime/4.3.0",
+      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0-preview6.19303.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xkjHKNHJB5Un/Ckdph9z/xBgmTpuDf/zlEEpir1rBVGxUfTRLsH1Ejdkvn34ENsUkglSkjt+O3UqKU4ypH+mUA==",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0-preview6.19303.8",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0-preview6.19303.8.nupkg.sha512"
+    },
+    "System.Text.Encoding/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b/f+7HMTpxIfeV7H03bkuHKMFylCGfr9/U6gePnfFFW0aF8LOWLDgQCY6V1oWUqDksC3mdNuyChM1vy9TP4sZw==",
+      "path": "system.text.encoding/4.3.0",
+      "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
+    },
+    "System.Text.Json/4.6.0-preview6.19303.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dJVuxlkRWMryUZGuq5MIDarOcQ7a4u3NXmEePQRsSTwB00Yfo+uOB5QNPVge37g55VDdwjRcJ7uCB2duVy69Fg==",
+      "path": "system.text.json/4.6.0-preview6.19303.8",
+      "hashPath": "system.text.json.4.6.0-preview6.19303.8.nupkg.sha512"
+    },
+    "System.Threading.Tasks/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fUiP+CyyCjs872OA8trl6p97qma/da1xGq3h4zAbJZk8zyaU4zyEfqW5vbkP80xG/Nimun1vlWBboMEk7XxdEw==",
+      "path": "system.threading.tasks/4.3.0",
+      "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Dataflow/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CyD248zUJP2zTYFGhWZ3CnndgI9rFeyU3CMHHPZugsMenblyQw5GruwS0YaOBp0PdgpPvFhg5pqs0Yns0NvgNQ==",
+      "path": "system.threading.tasks.dataflow/4.8.0",
+      "hashPath": "system.threading.tasks.dataflow.4.8.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5HCu8V3QB+gouMZmGrA666weZ0UQRt+OTD16rSE3Hyhu4Qhlvxkf4nTPI0GLy52s0rxgi7C8t2ayFAzw7UK1og==",
+      "path": "system.threading.tasks.extensions/4.5.2",
+      "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+    }
+  }
+}
