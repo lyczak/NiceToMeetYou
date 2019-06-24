@@ -48,6 +48,7 @@ namespace NiceToMeetYou
                 // Extra
                 .AddSingleton(_config)
                 // Add additional services here...
+                .AddSingleton<ClassificationService>()
                 .BuildServiceProvider();
         }
 

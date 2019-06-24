@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Discord;
 using Discord.WebSocket;
 using Microsoft.ML;
 using NiceToMeetYou.Models;
@@ -11,13 +12,15 @@ namespace NiceToMeetYou.Services
     {
         private static MLContext _context;
         private static PredictionEngine<SimpleTextMessage, SimpleMessagePrediction> _predEngine;
+        private static IDataView _trainingData;
+        private static ITransformer _trainedModel;
 
         public ClassificationService()
         {
             _context = new MLContext();
         }
 
-        public void LoadMessages(IEnumerable<SocketMessage> messages)
+        public void LoadMessages(IEnumerable<IMessage> messages)
         {
             IEnumerable<SimpleTextMessage> simpleMessages = messages.Select(m =>
                 new SimpleTextMessage
@@ -25,8 +28,25 @@ namespace NiceToMeetYou.Services
                     Id = m.Author.Id,
                     Content = m.Content
                 });
-            
-            _context.Data.LoadFromEnumerable(simpleMessages);
+
+            _trainingData = _context.Data.LoadFromEnumerable(simpleMessages);
+        }
+
+        private IEstimator<ITransformer> FeaturizeAndTransform()
+        {
+            var pipeline = _context.Transforms.Conversion
+                .MapValueToKey("Label", nameof(SimpleTextMessage.Id))
+                .Append(_context.Transforms.Text.FeaturizeText(
+                    "Features", nameof(SimpleTextMessage.Content)));
+            return pipeline;
+        }
+
+        private void BuildAndTrain(IEstimator<ITransformer> pipeline)
+        {
+            var trainingPipeline = pipeline.Append(_context.MulticlassClassification.Trainers
+                    .SdcaMaximumEntropy("Label", "Features"))
+                .Append(_context.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
+            _trainedModel = trainingPipeline.Fit(_trainingData);
         }
     }
 }
