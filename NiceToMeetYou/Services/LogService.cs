@@ -45,7 +45,7 @@ namespace NiceToMeetYou.Services
             // Return an error message for async commands
             if (message.Exception is CommandException command)
             {
-                // Don't risk blocking the logging task by awaiting a message send; ratelimits!?
+                // Don't risk blocking the logging task by awaiting a message send; ratelimits!
                 var _ = command.Context.Channel.SendMessageAsync($"Error: {command.Message}");
             }
 

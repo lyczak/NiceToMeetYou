@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,7 +32,7 @@ namespace NiceToMeetYou
             await _client.LoginAsync(TokenType.Bot, _config["token"]);
             await _client.StartAsync();
 
-            await Task.Delay(-1);
+            await Task.Delay(Timeout.Infinite);
         }
 
         private IServiceProvider ConfigureServices()
