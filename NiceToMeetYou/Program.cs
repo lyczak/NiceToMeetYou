@@ -8,6 +8,7 @@ using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.Logging;
+using NiceToMeetYou.Modules;
 using NiceToMeetYou.Services;
 
 namespace NiceToMeetYou
@@ -31,7 +32,9 @@ namespace NiceToMeetYou
 
             await _client.LoginAsync(TokenType.Bot, _config["token"]);
             await _client.StartAsync();
+            
 
+            ClassificationModule.ClassificationService = services.GetService<ClassificationService>();
             await Task.Delay(Timeout.Infinite);
         }
 

@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Discord;
 using Discord.WebSocket;
 using Microsoft.ML;
+using Microsoft.ML.Data;
 using NiceToMeetYou.Models;
 
 namespace NiceToMeetYou.Services
@@ -28,8 +30,9 @@ namespace NiceToMeetYou.Services
                     Id = m.Author.Id,
                     Content = m.Content
                 });
-
+            
             _trainingData = _context.Data.LoadFromEnumerable(simpleMessages);
+            BuildAndTrain(FeaturizeAndTransform());
         }
 
         private IEstimator<ITransformer> FeaturizeAndTransform()
