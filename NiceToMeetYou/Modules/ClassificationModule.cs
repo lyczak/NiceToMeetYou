@@ -33,15 +33,18 @@ namespace NiceToMeetYou.Modules
         public async Task Train()
         {
             ClassificationService.LoadMessages(_messages);
+            var eb = new BotEmbedBuilder();
+            eb.WithDescription("Training complete.");
+            await ReplyAsync("", false, eb.Build());
         }
 
         [Command("predict")]
-        public async Task Predict(ulong messageID)
+        public async Task Predict([Remainder]String content)
         {
-            IMessage message = await Context.Channel.GetMessageAsync(messageID);
+           
             SimpleTextMessage simpleMessage = new SimpleTextMessage
             {
-                Content = message.Content
+                Content = content
             };
             await ReplyAsync(Context.Guild.GetUser(ClassificationService.PredictUser(simpleMessage)).Username);
         }
