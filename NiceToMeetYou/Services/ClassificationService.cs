@@ -51,5 +51,13 @@ namespace NiceToMeetYou.Services
                 .Append(_context.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
             _trainedModel = trainingPipeline.Fit(_trainingData);
         }
+
+        public ulong PredictUser(SimpleTextMessage message)
+        {
+            PredictionEngine<SimpleTextMessage, SimpleMessagePrediction> predictionEngine =
+                _context.Model.CreatePredictionEngine<SimpleTextMessage, SimpleMessagePrediction>(_trainedModel);
+            SimpleMessagePrediction prediction = predictionEngine.Predict(message);
+            return prediction.Id;
+        }
     }
 }

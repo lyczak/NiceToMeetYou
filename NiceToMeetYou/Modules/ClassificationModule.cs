@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using NiceToMeetYou.Models;
 using NiceToMeetYou.Services;
 
 namespace NiceToMeetYou.Modules
@@ -32,6 +33,17 @@ namespace NiceToMeetYou.Modules
         public async Task Train()
         {
             ClassificationService.LoadMessages(_messages);
+        }
+
+        [Command("predict")]
+        public async Task Predict(ulong messageID)
+        {
+            IMessage message = await Context.Channel.GetMessageAsync(messageID);
+            SimpleTextMessage simpleMessage = new SimpleTextMessage
+            {
+                Content = message.Content
+            };
+            await ReplyAsync(Context.Guild.GetUser(ClassificationService.PredictUser(simpleMessage)).Username);
         }
     }
 }
